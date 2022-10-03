@@ -6,7 +6,7 @@ node {
         sh 'mvn package'       
     }  
    stage('Archive') {
-    archiveArtifacts artifacts: 'target\\AWS-JavaProject.war', followSymlinks: false    
+    archiveArtifacts artifacts: 'target\\messageUtil-1.0.jar', followSymlinks: false    
     }
     
 }
