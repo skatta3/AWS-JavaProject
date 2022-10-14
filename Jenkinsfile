@@ -3,7 +3,7 @@ node {
      git branch: 'main', url: 'https://github.com/skatta3/AWS-JavaProject.git' 
     }
      stage('Maven') {
-        sh 'mvn package'       
+        bat 'mvn package'       
     }  
    stage('Archive') {
     archiveArtifacts artifacts: 'target\\messageUtil-1.0.jar', followSymlinks: false    
