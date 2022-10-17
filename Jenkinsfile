@@ -1,6 +1,6 @@
 node {
     stage('SCM') {
-     git branch: 'main', url: 'https://github.com/skatta3/AWS-JavaProject.git' 
+     git branch: 'Release', url: 'https://github.com/skatta3/AWS-JavaProject.git' 
     }
      stage('Maven') {
         bat 'mvn package'       
