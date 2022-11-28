@@ -1,6 +1,6 @@
 node{
     stage('Build'){
-        steps{
+        step{
             script{
                 if(env.BRANCH_NAME=='main'){
                     git branch: 'main', url: 'https://github.com/skatta3/AWS-JavaProject.git'
