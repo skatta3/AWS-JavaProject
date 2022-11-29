@@ -1,4 +1,4 @@
-node {
+pipeline {
     stage('SCM') {
      git branch: 'release', url: 'https://github.com/skatta3/AWS-JavaProject.git' 
     }
