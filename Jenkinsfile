@@ -7,9 +7,7 @@ node {
     }  
    stage('Archive') {
     when{
-        expression{
-            env.BRANCH_NAME=='main'
-        }
+        branch:'main'
     }
     steps{
     archiveArtifacts artifacts: 'target\\messageUtil-1.0.jar', followSymlinks: false    
