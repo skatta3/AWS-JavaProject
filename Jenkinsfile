@@ -13,7 +13,7 @@ pipeline {
      }
    stage('Archive') {
     when{
-        branch:'main'
+        branch'main'
     }
     steps{
     archiveArtifacts artifacts: 'target\\messageUtil-1.0.jar', followSymlinks: false    
