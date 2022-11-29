@@ -3,7 +3,7 @@ pipeline {
     stages{
     stage('SCM') {
         steps{
-     git branch: 'release', url: 'https://github.com/skatta3/AWS-JavaProject.git' 
+     git branch: 'Release', url: 'https://github.com/skatta3/AWS-JavaProject.git' 
     }
     }
      stage('Maven') {
