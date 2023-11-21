@@ -3,7 +3,7 @@ pipeline{
     stages{
        stage('GetCode'){
             steps{
-              git branch: 'main', url: 'https://github.com/skatta3/AWS-JavaProject.git'
+              git branch: 'Development', url: 'https://github.com/skatta3/AWS-JavaProject.git'
             }
          }        
        stage('Build'){
